@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <section class="hero is-primary is-bold">
+    <div class="hero-body">
+      <div class="titleContainer">
+        <h1 class="title">
+          Movie Fight
+
+          <span class="icon">
+            <i class="fas fa-film"></i>
+          </span>
+        </h1>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="notification is-primary tutorial custom-centered">
+      <h1 class="title">Search For a Movie on Both Sides</h1>
+      <p class="subtitle">We will tell you which is best!</p>
+    </div>
+    
+    <div class="columns">
+      <div class="column">
+        <div id="left-autocomplete"></div>
+        <div id="left-summary"></div>
+      </div>
+
+      <div class="column">
+        <div id="right-autocomplete"></div>
+        <div id="right-summary"></div>
+      </div>
+    </div>
+
+    <div class="background-image">
+      <img src="https://img.freepik.com/free-vector/family-ready-go-watch-movie_53876-37194.jpg?t=st=1717167999~exp=1717171599~hmac=7667ac793d03f53dcc9192cd7a67ddcff29d94b4ec37b37538c92891a017bceb&w=826" alt="Movie Night">
+    </div>
+  </div>
+  
+
+  <script src="utils.js"></script>
+  <script src="autocomplete.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
